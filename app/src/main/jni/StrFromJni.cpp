@@ -7,7 +7,7 @@
 extern "C" {
 jstring
 Java_com_wzhy_ndkdemo1_MainActivity_getJniStr
-        (JNIEnv *env, jstring joriStr) {
+        (JNIEnv *env, jobject jobj) {
     char hello[100] = "欢迎使用C++!";
     return env->NewStringUTF(hello);
 }

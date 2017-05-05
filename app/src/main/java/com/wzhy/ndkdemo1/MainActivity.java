@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         mTvHello = (TextView) findViewById(R.id.tv_hello);
 
-        mTvHello.setText(getJniStr("wzhy"));
+        mTvHello.setText(getJniStr());
     }
 
-    public native String getJniStr(String oriStr);
+    public native String getJniStr();
 
 }
